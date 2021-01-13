@@ -4,7 +4,7 @@ class morse
 {
 public static void main(String args[])
 {   Scanner in = new Scanner (System.in);
-    System.out.println("ENTER TEXT (NO NUMBERS)");
+    System.out.println("ENTER TEXT ");
     String s=in.nextLine();
     System.out.println("ENTER 1 TO CONVERT TO MORSE \nENTER 2 TO CONVERT TO TEXT ");;
     Morse ob = new Morse();//creates object for calling package
