@@ -1,0 +1,24 @@
+import decrypting.*;
+import java.util.*;
+class morse
+{
+public static void main(String args[])
+{   Scanner in = new Scanner (System.in);
+    System.out.println("ENTER TEXT (NO NUMBERS)");
+    String s=in.nextLine();
+    System.out.println("ENTER 1 TO CONVERT TO MORSE \nENTER 2 TO CONVERT TO TEXT ");;
+    Morse ob = new Morse();//creates object for calling package
+    int c=in.nextInt();
+    switch(c)
+    {
+      case 1:
+      ob.engTOmorse(s);
+      break;
+      case 2:
+      ob.morseTOeng(s);
+      break;
+      default:
+      System.out.println("TERMINATED");
+    }
+}
+}
